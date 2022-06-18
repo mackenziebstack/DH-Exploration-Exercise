@@ -23,7 +23,8 @@ Name: Mackenzie Stack
 
 &emsp;Using instructions from the API tutorial, insight gained from the python tutorial, and a very helpful tutorial by Nic Fox[^7], I wrote a python file that makes calls to Old Baileys API using the trial IDs, parses the XML files, and creates a data frame for the information. I then exported the data frame to CSV files for analysis. I then repeated this step for the corporal punishment trial ids. 
 
-Check out the code here: 
+Check out API code here :[API Code](https://github.com/mackenziebstack/DH-Exploration-Exercise/blob/0228308cb597d90cfe8d3cb62107815b48c99495/api_data/getTransData.py)
+
 
 &emsp;Next, I begin topic modeling while following steps from the "Cleaning and manipulating data" tutorial and the "Topic models tutorial." 
 
