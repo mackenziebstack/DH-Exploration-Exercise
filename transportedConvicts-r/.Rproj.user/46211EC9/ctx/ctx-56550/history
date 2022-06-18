@@ -1,0 +1,72 @@
+install.packages('tidytext')
+trasportedConvicts.csv
+trasportedConvicts.csv
+trasportedConvicts.csv
+tc
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+tc  <- read_csv("trasportedConvicts.csv")
+tc  <- read_csv('trasportedConvicts.csv')
+# libraries
+library(tidyverse)
+library(tidytext)
+tc  <- read_csv('trasportedConvicts.csv')
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+data(stop_words)
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+tc_df <- tibble(id = tc$index, text = (str_remove_all(tc$trialText, "[0-9]")), date = tc$crimeData)
+tc_df <- tibble(id = tc$index, text = (str_remove_all(tc$trialText, "[0-9]")), text = tc$crimeData)
+library("tidyverse")
+tc_df <- df %>% mutate(id = row_number())
+library("dplyr")
+tc_df <- df %>% mutate(id = row_number())
+tc_df <- tc_df %>% mutate(id = row_number())
+tc_df
+tc_df <- tibble(id = tc$id, text = (str_remove_all(tc$trialText, "[0-9]")), date = tc$crimeData)
+tc  <- read_csv('trasportedConvicts.csv')
+tc_df <- tc_df %>% mutate(id = row_number())
+tc_df <- tibble(id = tc$id, text = (str_remove_all(tc$trialText, "[0-9]")), date = tc$crimeData)
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+tc_df <- tibble(id = tc$id, text = (str_remove_all(tc$trialText, "[0-9]")), date = tc$crimeData)
+tc
+tc_words <- tidy_tc %>%
+count(id, word, sort = TRUE)
+head(tc_words)
+tc_words <- tidy_tc %>%
+count(id, word, sort = TRUE)
+dtm <- tc_words %>%
+cast_dtm(id, word, n)
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+tidy_tc <- tc_df %>%
+unnest_tokens(word, text)
+data(stop_words)
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+tc_words <- tidy_tc %>%
+count(id, word, sort = TRUE)
+head(tc_words)
+library("dplyr")
+library("dplyr")
+library(tidytext)
+# libraries
+library(tidyverse)
+tc  <- read_csv('trasportedConvicts.csv')
+tc_df <- tc_df %>% mutate(id = row_number())
+tc_df <- tibble(id = tc$id, text = (str_remove_all(tc$trialText, "[0-9]")), date = tc$crimeData)
+tidy_tc <- tc_df %>%
+unnest_tokens(word, text)
+data(stop_words)
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+tc_words <- tidy_tc %>%
+count(id, word, sort = TRUE)
+head(tc_words)
+dtm <- tc_words %>%
+cast_dtm(id, word, n)
+install.packages('tidyverse')
+install.packages('tidytext')
+install.packages('dplyr')

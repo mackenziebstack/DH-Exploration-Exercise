@@ -1,0 +1,48 @@
+install.packages('tidyverse')
+install.packages('tidytext')
+install.packages('dplyr')
+# libraries
+library(tidyverse)
+library(tidytext)
+library("dplyr")
+tc  <- read_csv('trasportedConvicts.csv')
+tc_df <- tc_df %>% mutate(id = row_number())
+tc_df <- tibble(id = tc$id, text = (str_remove_all(tc$trialText, "[0-9]")), date = tc$crimeData)
+tidy_tc <- tc_df %>%
+unnest_tokens(word, text)
+data(stop_words)
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+tc_words <- tidy_tc %>%
+count(id, word, sort = TRUE)
+head(tc_words)
+dtm <- tc_words %>%
+cast_dtm(id, word, n)
+install.packages("slam")
+dtm <- tc_words %>%
+cast_dtm(id, word, n)
+install.packages('tidyverse')
+install.packages('tidytext')
+install.packages('dplyr')
+install.packages("slam")
+# libraries
+library(tidyverse)
+library(tidytext)
+library("dplyr")
+library(tm)
+# load, clean, and get data into shape
+tc  <- read_csv('trasportedConvicts.csv')
+tc_df <- tc_df %>% mutate(id = row_number())
+tc_df <- tibble(id = tc$id, text = (str_remove_all(tc$trialText, "[0-9]")), date = tc$crimeData)
+tidy_tc <- tc_df %>%
+unnest_tokens(word, text)
+data(stop_words)
+tidy_tc <- tidy_tc %>%
+anti_join(stop_words)
+tc_words <- tidy_tc %>%
+count(id, word, sort = TRUE)
+head(tc_words)
+dtm <- tc_words %>%
+cast_dtm(id, word, n)
