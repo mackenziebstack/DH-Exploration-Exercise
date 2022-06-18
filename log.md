@@ -4,6 +4,13 @@ Tasks:
 1. Choose Database 
 2. Determine methods 
 
+citations:
+
+tutorials:
+
+literature:
+
+Going forward:
 
 
 
@@ -15,10 +22,25 @@ Date: June 17th 2022
 Name: Mackenzie Stack
 
 
-### Get Data
+### Determine What Data
+
+### Get Data 
+
+### Manipulate Data 
+
+## Create a dataframe 
+
+## Export to csv file 
+
+## Repeat for second set 
 
 
-### 
+# Topic Models 
+
+# Import CSV 
+
+# Edit API call and parse for year, create ID section
+
 
 
     
